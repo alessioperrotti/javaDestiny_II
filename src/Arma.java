@@ -26,31 +26,57 @@ public class Arma {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("\n--SETUP DELL'ARMA " + this.nome + " --");
+        System.out.println("\n-- SETUP DELL'ARMA " + this.nome + " --");
         System.out.print("Impatto: ");
         int a = in.nextInt();
+        while (a<0 || a>100){
+            System.out.print("   Valore non valido (range 0-100). Rirpova: ");
+            a = in.nextInt();
+        }
         this.impatto = a;
         System.out.print("Gittata: ");
         int b = in.nextInt();
+        while (b<0 || b>100){
+            System.out.print("   Valore non valido (range 0-100). Rirpova: ");
+            b = in.nextInt();
+        }
         this.gittata = b;
         System.out.print("Stabilità: ");
         int c = in.nextInt();
+        while (c<0 || c>100){
+            System.out.print("   Valore non valido (range 0-100). Rirpova: ");
+            c = in.nextInt();
+        }
         this.stabilita = c;
         System.out.print("Manegevolezza: ");
         int d = in.nextInt();
+        while (d<0 || d>100){
+            System.out.print("   Valore non valido (range 0-100). Rirpova: ");
+            d = in.nextInt();
+        }
         this.manegevolezza = d;
         System.out.print("Velocità di Ricarica: ");
         int e = in.nextInt();
+        while (e<0 || e>100){
+            System.out.print("   Valore non valido (range 0-100). Rirpova: ");
+            e = in.nextInt();
+        }
         this.velRicarica = e;
         System.out.print("Proiettili per minuto: ");
         int f = in.nextInt();
+        while (f<0 || f>100){
+            System.out.print("   Valore non valido (range 0-100). Rirpova: ");
+            f = in.nextInt();
+        }
         this.proiettiliPerMin = f;
         System.out.print("Caricatore: ");
         int g = in.nextInt();
+        while (g<0 || g>100){
+            System.out.print("   Valore non valido (range 0-100). Rirpova: ");
+            g = in.nextInt();
+        }
         this.caricatore = g;
         System.out.println("Setup di " + this.nome + " completato con successo!\n");
-
-        //in.close();
     }
 
     public void getInfo(){

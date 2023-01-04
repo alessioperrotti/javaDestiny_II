@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Destiny_II:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="Destiny_II.jar">
+      <element id="module-output" name="Destiny_II" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/20.1.0/annotations-20.1.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

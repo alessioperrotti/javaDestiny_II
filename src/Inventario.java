@@ -109,7 +109,7 @@ public class Inventario {
 
         for (int i = 0; i<(avgCapacita/2)+1; i++)
             System.out.print('*');
-        System.out.println(" capacità");
+        System.out.println(" caricatore");
         System.out.println();
     }
 
@@ -120,5 +120,9 @@ public class Inventario {
         }
         System.out.println("Arma non trovata.");
         return null;
+    }
+
+    public int getDimensione() {
+        return dimensione;
     }
 }

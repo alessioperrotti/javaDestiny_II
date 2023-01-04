@@ -52,6 +52,10 @@ public class Main {
                             break;
                         case 'D':
                         case 'd':
+                            if (inventario.getDimensione() == 0) {
+                                System.out.println("Non ci sono armi nell'arsenale.\n");
+                                break;
+                            }
                             System.out.print("\nA quale arma vuoi accedere? (inserisci il nome): ");
                             in.nextLine();
                             String nome = in.nextLine();
@@ -77,6 +81,9 @@ public class Main {
                                     break;
                             }
 
+                            break;
+                        case 'E':
+                        case 'e':
                             break;
                         default:
                             System.out.println("Carattere non valido.");
